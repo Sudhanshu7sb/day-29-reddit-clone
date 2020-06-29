@@ -20,9 +20,8 @@ function searchDetails(input){
     xhr.onload = function() {
         let response = JSON.parse(xhr.response);
         console.log(response);
-        // console.log(response.data.children.map(elem => elem.data.title));
+        
 
-       
         list.innerHTML = "";
         response.data.children.map(elem => {
            
@@ -56,7 +55,7 @@ function searchDetails(input){
             <a href ="#">Save</a>
             <i class="fas fa-share"></i>
             <a href="#"> Share</a>`;
-            
+            // right links
             right.innerHTML=`
             <article class="root-right-left">
             <a href="#">Help</a>
